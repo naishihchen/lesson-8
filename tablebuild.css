@@ -21,7 +21,7 @@ tr:nth-child(odd){
 	background-color:#e7ffed;
 }
 
-tr:nth-child(even){
+tr{
 	background-color:#e7f0ed;
 }
 
@@ -30,3 +30,4 @@ tr:nth-child(even){
 	color:black;
 	padding:8px 20px;
 }
+
