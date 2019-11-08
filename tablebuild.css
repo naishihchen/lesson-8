@@ -1,0 +1,32 @@
+table{
+	width:300px;
+	font-family: 'Ubuntu',sans-serif;
+	background-color:#bbbbbb;
+    text-align:center;
+    box-shadow: 8px 8px 10px #6d8fa7;
+}
+
+th{
+	background-color:#628ca6;
+	color:white;
+	text-align:center;
+	padding:8px;
+}
+
+td{
+	padding:8px;
+}
+
+tr:nth-child(odd){
+	background-color:#e7ffed;
+}
+
+tr:nth-child(even){
+	background-color:#e7f0ed;
+}
+
+#head{
+	background-color:#7fb9c2;
+	color:black;
+	padding:8px 20px;
+}
