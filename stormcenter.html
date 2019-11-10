@@ -3,7 +3,7 @@
     <head>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width">
-        <link href="stormcenter.css" rel="stylesheet">
+        <link href="styles/weather-sites.css" rel="stylesheet">
         <link href="styles/medium.css" rel="stylesheet">
         <link href="styles/large.css" rel="stylesheet">
         <link rel="shortcut icon" href="favicon.ico">
@@ -13,6 +13,7 @@
         <script src="js/time.js"></script>
         <script src="js/windchill.js"></script>
         <script src="js/toggle-menu-script.js"></script>
+        <script src="js/ratingbar.js"></script>
     </head>
     <body onload="getTime(); getWindChill();">
         <header>
@@ -35,12 +36,12 @@
         </nav>
         <main>
             <div class="wrap">
-            <form action="#" methid="get">
+            <form action="thanks.html" method="get">
                 <fieldset class="form1">
                     <legend class="font">
                     Your Details:
                     </legend>
-                        <label>Name: <input type="text" name="name" pattern="text" placeholder="Full Name" required></label>
+                        <label>Name: <input type="text" name="name" pattern="[A-Za-z]{5,}" placeholder="Full Name" required></label>
                         <br>
                         <label>E-Mail:<input type="email" name="email" placeholder="user@email.com"></label>
                         <br>
@@ -65,14 +66,14 @@
                         <p><label>Storm Severity: <input name="severity" type="range" id="rating" value="5" min="1" max="10" step="1" oninput="adjustRating(this.value)" onchange="adjustRating(this.value)">
                         <span id="ratingvalue">5</span></label>
                         </p>
-                        <p><label>Storm Region: 
+                        <p><label>Storm Region:
                         <select name="Storm Region">
                         <option value="Select Region">Select Region ...</option>
                         <option value="Preston">Preston</option>
                         <option value="Soda Springs">Soda Springs</option>
                         <option value="Fish Haven">Fish Haven</option>
-                        </select> </label> 
-                        </p> 
+                        </select> </label>
+                        </p>
                         <p><label>User in-danger level: </label>
                         <label for="yes">Yes<input type="radio" id="yes" name="answer" value="Yes" checked></label>
                         <label for="maybe">Maybe<input type="radio" id="maybe" name="answer"  value="maybe"></label>
